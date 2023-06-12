@@ -1,0 +1,28 @@
+Matrix([[-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta), -sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta), sin(theta)*cos(phi)], [sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi), -sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi), sin(phi)*sin(theta)], [-sin(theta)*cos(psi), sin(psi)*sin(theta), cos(theta)]])
+xxx:  0
+xxy:  0
+xxz:  (aac*cos(theta)**2 + aac - aca*sin(theta)**2 + bbc*cos(theta)**2 + bbc - bcb*sin(theta)**2 - caa*sin(theta)**2 - cbb*sin(theta)**2 + 2*ccc*sin(theta)**2)*cos(theta)/4
+xyx:  0
+xyy:  0
+xyz:  (2*abc*cos(theta)**2 - acb*sin(theta)**2 - 2*bac*cos(theta)**2 + bca*sin(theta)**2 + cab*sin(theta)**2 - cba*sin(theta)**2)/4
+xzx:  -(aac*sin(theta)**2 - aca*cos(theta)**2 - aca + bbc*sin(theta)**2 - bcb*cos(theta)**2 - bcb + caa*sin(theta)**2 + cbb*sin(theta)**2 - 2*ccc*sin(theta)**2)*cos(theta)/4
+xzy:  -(abc*sin(theta)**2 - 2*acb*cos(theta)**2 - bac*sin(theta)**2 + 2*bca*cos(theta)**2 + cab*sin(theta)**2 - cba*sin(theta)**2)/4
+xzz:  0
+yxx:  0
+yxy:  0
+yxz:  -(2*abc*cos(theta)**2 - acb*sin(theta)**2 - 2*bac*cos(theta)**2 + bca*sin(theta)**2 + cab*sin(theta)**2 - cba*sin(theta)**2)/4
+yyx:  0
+yyy:  0
+yyz:  (aac*cos(theta)**2 + aac - aca*sin(theta)**2 + bbc*cos(theta)**2 + bbc - bcb*sin(theta)**2 - caa*sin(theta)**2 - cbb*sin(theta)**2 + 2*ccc*sin(theta)**2)*cos(theta)/4
+yzx:  (abc*sin(theta)**2 - 2*acb*cos(theta)**2 - bac*sin(theta)**2 + 2*bca*cos(theta)**2 + cab*sin(theta)**2 - cba*sin(theta)**2)/4
+yzy:  -(aac*sin(theta)**2 - aca*cos(theta)**2 - aca + bbc*sin(theta)**2 - bcb*cos(theta)**2 - bcb + caa*sin(theta)**2 + cbb*sin(theta)**2 - 2*ccc*sin(theta)**2)*cos(theta)/4
+yzz:  0
+zxx:  -(aac*sin(theta)**2 + aca*sin(theta)**2 + bbc*sin(theta)**2 + bcb*sin(theta)**2 - caa*cos(theta)**2 - caa - cbb*cos(theta)**2 - cbb - 2*ccc*sin(theta)**2)*cos(theta)/4
+zxy:  (abc*sin(theta)**2 - acb*sin(theta)**2 - bac*sin(theta)**2 + bca*sin(theta)**2 + 2*cab*cos(theta)**2 - 2*cba*cos(theta)**2)/4
+zxz:  0
+zyx:  -(abc*sin(theta)**2 - acb*sin(theta)**2 - bac*sin(theta)**2 + bca*sin(theta)**2 + 2*cab*cos(theta)**2 - 2*cba*cos(theta)**2)/4
+zyy:  -(aac*sin(theta)**2 + aca*sin(theta)**2 + bbc*sin(theta)**2 + bcb*sin(theta)**2 - caa*cos(theta)**2 - caa - cbb*cos(theta)**2 - cbb - 2*ccc*sin(theta)**2)*cos(theta)/4
+zyz:  0
+zzx:  0
+zzy:  0
+zzz:  (aac*sin(theta)**2 + aca*sin(theta)**2 + bbc*sin(theta)**2 + bcb*sin(theta)**2 + caa*sin(theta)**2 + cbb*sin(theta)**2 + 2*ccc*cos(theta)**2)*cos(theta)/2

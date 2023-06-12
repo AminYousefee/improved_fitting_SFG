@@ -1,0 +1,89 @@
+# list of tuple (amp, freq0, Gamma)
+# with NR amp as the first item of the list
+ eg. info =[1.26, (1.4, 2850., 14), (-2.1, 2875., 13.2)]
+number of modes is len(info) - 1
+
+freq = linspace(2000, 3500, 600)
+
+def L(n1, n2, theta1):
+   return (Lxx, Lyy, Lzz)
+
+def chi2(freq, info):
+   result = np.ones(len(freq))*(info[0] + 0j)
+   for mode in info[1:]:
+      result += mode[0]/(freq - mode[1] - mode[2]*1j)
+   return chi2
+
+
+Lyy_SFG <- L(n1_SFG, n2_SFG, theta1_SFG)[1]
+Lyy_vis <- L(n1_vis, n2_vis, theta1_vis)[1]
+Lyy_IR <- L(n1_IR, n2_IR, theta1_IR)[2]
+
+chi2yyz <- chi2(freq, info_yyz)
+
+chi2ssp = Lyy_SFG * Lyy_vis * Lzz_IR * chi2yyz
+
+chi2sps = Lyy_SFG * Lzz_vis * Lyy_IR * chi2yzy
+
+chi2ppp = Lzz * Lzz * Lzz * chi2zzz + term2 + term3 + term4
+
+
+--- goal ---
+
+delta function, theta0 = 35 deg
+
+calculate LL's
+calculate chi2ssp, sps, ppp
+
+save 1 file with 4 columns:
+   freq [5 cm-1 step], abs(ssp)**2, abs(sps)**2, abs(ppp)**2
+   all Gamma = 10 cm-1
+
+separate file, save list of freq0
+
+--- separate code ---
+
+load that file with the 4 columns
+
+freq, sspExpt, spsExpt, pppExpt = loadtxt('file.txt', unpack=True)
+
+load the list of freq0 values
+
+fit the data
+ * goal: determine amplitudes
+ 
+ * required:
+n1, n2, theta1 at each of SFG, vis, and IR frequencies
+ (in order to calculate L)
+
+* initial guess for amplitudes
+n = len(freq0list)
+
+* I recommend scipy.optimize.fmin_tnc
+
+p0 = [-1, 1, 1, 1, -1] ... there should be n of these
+p0 = ones(len(freq0list))
+
+The optimizer (in this case fmin_tnc) will take a function, and try to vary the parameters in order to make the single returned float as small as possible.
+
+let's just focus on ssp for now
+
+def error(p):
+   sspModel = LLL * chi2(dict based on p)
+   return np.sum( abs(sspModel)**2 - sspExpt)**2 )
+
+or ... global fitting of all 3 polarizations
+
+def error(p):
+   sspModel = LLL * chi2(dict based on p)
+   spsModel = LLL * chi2(different dictionary)
+   pppModel = 4 terms
+
+   return np.sum( abs(sspModel)**2 - sspExpt)**2 ) + np.sum( abs(spsModel)**2 - spsExpt)**2 ) + np.sum( abs(pppModel)**2 - pppExpt)**2 )
+
+
+
+
+
+
+

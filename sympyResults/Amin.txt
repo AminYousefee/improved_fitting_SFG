@@ -1,0 +1,89 @@
+lab dmu Matrix([[mua*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + mub*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + muc*sin(theta)*cos(phi)], [mua*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + mub*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + muc*sin(phi)*sin(theta)], [-mua*sin(theta)*cos(psi) + mub*sin(psi)*sin(theta) + muc*cos(theta)]])
+lab dalpha Matrix([[(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta))*(alphaaa*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + alphaba*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + alphaca*sin(theta)*cos(phi)) + (-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta))*(alphaba*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + alphabb*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + alphacb*sin(theta)*cos(phi)) + (alphaca*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + alphacb*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + alphacc*sin(theta)*cos(phi))*sin(theta)*cos(phi), (-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi))*(alphaba*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + alphabb*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + alphacb*sin(theta)*cos(phi)) + (sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi))*(alphaaa*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + alphaba*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + alphaca*sin(theta)*cos(phi)) + (alphaca*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + alphacb*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + alphacc*sin(theta)*cos(phi))*sin(phi)*sin(theta), -(alphaaa*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + alphaba*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + alphaca*sin(theta)*cos(phi))*sin(theta)*cos(psi) + (alphaba*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + alphabb*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + alphacb*sin(theta)*cos(phi))*sin(psi)*sin(theta) + (alphaca*(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta)) + alphacb*(-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta)) + alphacc*sin(theta)*cos(phi))*cos(theta)], [(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta))*(alphaaa*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + alphaba*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + alphaca*sin(phi)*sin(theta)) + (-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta))*(alphaba*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + alphabb*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + alphacb*sin(phi)*sin(theta)) + (alphaca*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + alphacb*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + alphacc*sin(phi)*sin(theta))*sin(theta)*cos(phi), (-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi))*(alphaba*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + alphabb*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + alphacb*sin(phi)*sin(theta)) + (sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi))*(alphaaa*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + alphaba*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + alphaca*sin(phi)*sin(theta)) + (alphaca*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + alphacb*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + alphacc*sin(phi)*sin(theta))*sin(phi)*sin(theta), -(alphaaa*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + alphaba*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + alphaca*sin(phi)*sin(theta))*sin(theta)*cos(psi) + (alphaba*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + alphabb*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + alphacb*sin(phi)*sin(theta))*sin(psi)*sin(theta) + (alphaca*(sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi)) + alphacb*(-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi)) + alphacc*sin(phi)*sin(theta))*cos(theta)], [(-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta))*(-alphaaa*sin(theta)*cos(psi) + alphaba*sin(psi)*sin(theta) + alphaca*cos(theta)) + (-sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta))*(-alphaba*sin(theta)*cos(psi) + alphabb*sin(psi)*sin(theta) + alphacb*cos(theta)) + (-alphaca*sin(theta)*cos(psi) + alphacb*sin(psi)*sin(theta) + alphacc*cos(theta))*sin(theta)*cos(phi), (-sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi))*(-alphaba*sin(theta)*cos(psi) + alphabb*sin(psi)*sin(theta) + alphacb*cos(theta)) + (sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi))*(-alphaaa*sin(theta)*cos(psi) + alphaba*sin(psi)*sin(theta) + alphaca*cos(theta)) + (-alphaca*sin(theta)*cos(psi) + alphacb*sin(psi)*sin(theta) + alphacc*cos(theta))*sin(phi)*sin(theta), -(-alphaaa*sin(theta)*cos(psi) + alphaba*sin(psi)*sin(theta) + alphaca*cos(theta))*sin(theta)*cos(psi) + (-alphaba*sin(theta)*cos(psi) + alphabb*sin(psi)*sin(theta) + alphacb*cos(theta))*sin(psi)*sin(theta) + (-alphaca*sin(theta)*cos(psi) + alphacb*sin(psi)*sin(theta) + alphacc*cos(theta))*cos(theta)]])
+for IR: dmu in lab
+iso tropic (all uniform) which means we have triple integration
+dmudQ X (mua**2 + mub**2 + muc**2)/3
+dmudQ Y (mua**2 + mub**2 + muc**2)/3
+dmudQ Z (mua**2 + mub**2 + muc**2)/3
+phi, psi uniform (theta unspecified)
+dmudQ X (mua**2*cos(theta)**2 + mua**2 + mub**2*cos(theta)**2 + mub**2 + 2*muc**2*sin(theta)**2)/4
+dmudQ Y (mua**2*cos(theta)**2 + mua**2 + mub**2*cos(theta)**2 + mub**2 + 2*muc**2*sin(theta)**2)/4
+dmudQ Z (mua**2*sin(theta)**2 + mub**2*sin(theta)**2 + 2*muc**2*cos(theta)**2)/2
+for Raman
+iso tropic (all uniform)
+dalphadQ XX (3*alphaaa**2 + 2*alphaaa*alphabb + 2*alphaaa*alphacc + 4*alphaba**2 + 3*alphabb**2 + 2*alphabb*alphacc + 4*alphaca**2 + 4*alphacb**2 + 3*alphacc**2)/15
+dalphadQ XY (alphaaa**2 - alphaaa*alphabb - alphaaa*alphacc + 3*alphaba**2 + alphabb**2 - alphabb*alphacc + 3*alphaca**2 + 3*alphacb**2 + alphacc**2)/15
+dalphadQ XZ (alphaaa**2 - alphaaa*alphabb - alphaaa*alphacc + 3*alphaba**2 + alphabb**2 - alphabb*alphacc + 3*alphaca**2 + 3*alphacb**2 + alphacc**2)/15
+dalphadQ YX (alphaaa**2 - alphaaa*alphabb - alphaaa*alphacc + 3*alphaba**2 + alphabb**2 - alphabb*alphacc + 3*alphaca**2 + 3*alphacb**2 + alphacc**2)/15
+dalphadQ YY (3*alphaaa**2 + 2*alphaaa*alphabb + 2*alphaaa*alphacc + 4*alphaba**2 + 3*alphabb**2 + 2*alphabb*alphacc + 4*alphaca**2 + 4*alphacb**2 + 3*alphacc**2)/15
+dalphadQ YZ (alphaaa**2 - alphaaa*alphabb - alphaaa*alphacc + 3*alphaba**2 + alphabb**2 - alphabb*alphacc + 3*alphaca**2 + 3*alphacb**2 + alphacc**2)/15
+dalphadQ ZX (alphaaa**2 - alphaaa*alphabb - alphaaa*alphacc + 3*alphaba**2 + alphabb**2 - alphabb*alphacc + 3*alphaca**2 + 3*alphacb**2 + alphacc**2)/15
+dalphadQ ZY (alphaaa**2 - alphaaa*alphabb - alphaaa*alphacc + 3*alphaba**2 + alphabb**2 - alphabb*alphacc + 3*alphaca**2 + 3*alphacb**2 + alphacc**2)/15
+dalphadQ ZZ (3*alphaaa**2 + 2*alphaaa*alphabb + 2*alphaaa*alphacc + 4*alphaba**2 + 3*alphabb**2 + 2*alphabb*alphacc + 4*alphaca**2 + 4*alphacb**2 + 3*alphacc**2)/15
+phi, psi uniform (theta unspecified)
+dalphadQ XX (9*alphaaa**2*sin(theta)**4 - 24*alphaaa**2*sin(theta)**2 + 24*alphaaa**2 + 6*alphaaa*alphabb*sin(theta)**4 - 16*alphaaa*alphabb*sin(theta)**2 + 16*alphaaa*alphabb - 24*alphaaa*alphacc*sin(theta)**4 + 32*alphaaa*alphacc*sin(theta)**2 + 12*alphaba**2*sin(theta)**4 - 32*alphaba**2*sin(theta)**2 + 32*alphaba**2 + 9*alphabb**2*sin(theta)**4 - 24*alphabb**2*sin(theta)**2 + 24*alphabb**2 - 24*alphabb*alphacc*sin(theta)**4 + 32*alphabb*alphacc*sin(theta)**2 - 48*alphaca**2*sin(theta)**4 + 64*alphaca**2*sin(theta)**2 - 48*alphacb**2*sin(theta)**4 + 64*alphacb**2*sin(theta)**2 + 24*alphacc**2*sin(theta)**4)/64
+dalphadQ XY (3*alphaaa**2*sin(theta)**4 - 8*alphaaa**2*sin(theta)**2 + 8*alphaaa**2 + 2*alphaaa*alphabb*sin(theta)**4 + 16*alphaaa*alphabb*sin(theta)**2 - 16*alphaaa*alphabb - 8*alphaaa*alphacc*sin(theta)**4 + 4*alphaba**2*sin(theta)**4 - 32*alphaba**2*sin(theta)**2 + 32*alphaba**2 + 3*alphabb**2*sin(theta)**4 - 8*alphabb**2*sin(theta)**2 + 8*alphabb**2 - 8*alphabb*alphacc*sin(theta)**4 - 16*alphaca**2*sin(theta)**4 + 32*alphaca**2*sin(theta)**2 - 16*alphacb**2*sin(theta)**4 + 32*alphacb**2*sin(theta)**2 + 8*alphacc**2*sin(theta)**4)/64
+dalphadQ XZ -(3*alphaaa**2*sin(theta)**4 - 4*alphaaa**2*sin(theta)**2 + 2*alphaaa*alphabb*sin(theta)**4 - 8*alphaaa*alphacc*sin(theta)**4 + 8*alphaaa*alphacc*sin(theta)**2 + 4*alphaba**2*sin(theta)**4 - 8*alphaba**2*sin(theta)**2 + 3*alphabb**2*sin(theta)**4 - 4*alphabb**2*sin(theta)**2 - 8*alphabb*alphacc*sin(theta)**4 + 8*alphabb*alphacc*sin(theta)**2 - 16*alphaca**2*sin(theta)**4 + 20*alphaca**2*sin(theta)**2 - 8*alphaca**2 - 16*alphacb**2*sin(theta)**4 + 20*alphacb**2*sin(theta)**2 - 8*alphacb**2 + 8*alphacc**2*sin(theta)**4 - 8*alphacc**2*sin(theta)**2)/16
+dalphadQ YX (3*alphaaa**2*sin(theta)**4 - 8*alphaaa**2*sin(theta)**2 + 8*alphaaa**2 + 2*alphaaa*alphabb*sin(theta)**4 + 16*alphaaa*alphabb*sin(theta)**2 - 16*alphaaa*alphabb - 8*alphaaa*alphacc*sin(theta)**4 + 4*alphaba**2*sin(theta)**4 - 32*alphaba**2*sin(theta)**2 + 32*alphaba**2 + 3*alphabb**2*sin(theta)**4 - 8*alphabb**2*sin(theta)**2 + 8*alphabb**2 - 8*alphabb*alphacc*sin(theta)**4 - 16*alphaca**2*sin(theta)**4 + 32*alphaca**2*sin(theta)**2 - 16*alphacb**2*sin(theta)**4 + 32*alphacb**2*sin(theta)**2 + 8*alphacc**2*sin(theta)**4)/64
+dalphadQ YY (9*alphaaa**2*sin(theta)**4 - 24*alphaaa**2*sin(theta)**2 + 24*alphaaa**2 + 6*alphaaa*alphabb*sin(theta)**4 - 16*alphaaa*alphabb*sin(theta)**2 + 16*alphaaa*alphabb - 24*alphaaa*alphacc*sin(theta)**4 + 32*alphaaa*alphacc*sin(theta)**2 + 12*alphaba**2*sin(theta)**4 - 32*alphaba**2*sin(theta)**2 + 32*alphaba**2 + 9*alphabb**2*sin(theta)**4 - 24*alphabb**2*sin(theta)**2 + 24*alphabb**2 - 24*alphabb*alphacc*sin(theta)**4 + 32*alphabb*alphacc*sin(theta)**2 - 48*alphaca**2*sin(theta)**4 + 64*alphaca**2*sin(theta)**2 - 48*alphacb**2*sin(theta)**4 + 64*alphacb**2*sin(theta)**2 + 24*alphacc**2*sin(theta)**4)/64
+dalphadQ YZ -(3*alphaaa**2*sin(theta)**4 - 4*alphaaa**2*sin(theta)**2 + 2*alphaaa*alphabb*sin(theta)**4 - 8*alphaaa*alphacc*sin(theta)**4 + 8*alphaaa*alphacc*sin(theta)**2 + 4*alphaba**2*sin(theta)**4 - 8*alphaba**2*sin(theta)**2 + 3*alphabb**2*sin(theta)**4 - 4*alphabb**2*sin(theta)**2 - 8*alphabb*alphacc*sin(theta)**4 + 8*alphabb*alphacc*sin(theta)**2 - 16*alphaca**2*sin(theta)**4 + 20*alphaca**2*sin(theta)**2 - 8*alphaca**2 - 16*alphacb**2*sin(theta)**4 + 20*alphacb**2*sin(theta)**2 - 8*alphacb**2 + 8*alphacc**2*sin(theta)**4 - 8*alphacc**2*sin(theta)**2)/16
+dalphadQ ZX -(3*alphaaa**2*sin(theta)**4 - 4*alphaaa**2*sin(theta)**2 + 2*alphaaa*alphabb*sin(theta)**4 - 8*alphaaa*alphacc*sin(theta)**4 + 8*alphaaa*alphacc*sin(theta)**2 + 4*alphaba**2*sin(theta)**4 - 8*alphaba**2*sin(theta)**2 + 3*alphabb**2*sin(theta)**4 - 4*alphabb**2*sin(theta)**2 - 8*alphabb*alphacc*sin(theta)**4 + 8*alphabb*alphacc*sin(theta)**2 - 16*alphaca**2*sin(theta)**4 + 20*alphaca**2*sin(theta)**2 - 8*alphaca**2 - 16*alphacb**2*sin(theta)**4 + 20*alphacb**2*sin(theta)**2 - 8*alphacb**2 + 8*alphacc**2*sin(theta)**4 - 8*alphacc**2*sin(theta)**2)/16
+dalphadQ ZY -(3*alphaaa**2*sin(theta)**4 - 4*alphaaa**2*sin(theta)**2 + 2*alphaaa*alphabb*sin(theta)**4 - 8*alphaaa*alphacc*sin(theta)**4 + 8*alphaaa*alphacc*sin(theta)**2 + 4*alphaba**2*sin(theta)**4 - 8*alphaba**2*sin(theta)**2 + 3*alphabb**2*sin(theta)**4 - 4*alphabb**2*sin(theta)**2 - 8*alphabb*alphacc*sin(theta)**4 + 8*alphabb*alphacc*sin(theta)**2 - 16*alphaca**2*sin(theta)**4 + 20*alphaca**2*sin(theta)**2 - 8*alphaca**2 - 16*alphacb**2*sin(theta)**4 + 20*alphacb**2*sin(theta)**2 - 8*alphacb**2 + 8*alphacc**2*sin(theta)**4 - 8*alphacc**2*sin(theta)**2)/16
+dalphadQ ZZ (3*alphaaa**2*sin(theta)**4 + 2*alphaaa*alphabb*sin(theta)**4 - alphaaa*alphacc*cos(4*theta) + alphaaa*alphacc + 4*alphaba**2*sin(theta)**4 + 3*alphabb**2*sin(theta)**4 - alphabb*alphacc*cos(4*theta) + alphabb*alphacc - 2*alphaca**2*cos(4*theta) + 2*alphaca**2 - 2*alphacb**2*cos(4*theta) + 2*alphacb**2 + 8*alphacc**2*cos(theta)**4)/8
+for SFG
+iso tropic (all uniform)
+XXX 0
+XXY 0
+XXZ 0
+XYX 0
+XYY 0
+XYZ 0
+XZX 0
+XZY 0
+XZZ 0
+YXX 0
+YXY 0
+YXZ 0
+YYX 0
+YYY 0
+YYZ 0
+YZX 0
+YZY 0
+YZZ 0
+ZXX 0
+ZXY 0
+ZXZ 0
+ZYX 0
+ZYY 0
+ZYZ 0
+ZZX 0
+ZZY 0
+ZZZ 0
+phi, psi uniform (theta unspecified)
+0XXX 0
+1XXY 0
+2XXZ (alphaaa*muc*cos(theta)**2 + alphaaa*muc + alphabb*muc*cos(theta)**2 + alphabb*muc - 2*alphaca*mua*sin(theta)**2 - 2*alphacb*mub*sin(theta)**2 + 2*alphacc*muc*sin(theta)**2)*cos(theta)/4
+3XYX 0
+4XYY 0
+5XYZ 0
+6XZX -(alphaaa*muc*sin(theta)**2 + alphabb*muc*sin(theta)**2 + 2*alphaca*mua*sin(theta)**2 - 2*alphaca*mua + 2*alphacb*mub*sin(theta)**2 - 2*alphacb*mub - 2*alphacc*muc*sin(theta)**2)*cos(theta)/4
+XZY -(alphaca*mub - alphacb*mua)*(3*sin(theta)**2 - 2)/4
+XZZ 0
+YXX 0
+YXY 0
+YXZ 0
+YYX 0
+YYY 0
+YYZ (alphaaa*muc*cos(theta)**2 + alphaaa*muc + alphabb*muc*cos(theta)**2 + alphabb*muc - 2*alphaca*mua*sin(theta)**2 - 2*alphacb*mub*sin(theta)**2 + 2*alphacc*muc*sin(theta)**2)*cos(theta)/4
+YZX (alphaca*mub - alphacb*mua)*(3*sin(theta)**2 - 2)/4
+YZY -(alphaaa*muc*sin(theta)**2 + alphabb*muc*sin(theta)**2 + 2*alphaca*mua*sin(theta)**2 - 2*alphaca*mua + 2*alphacb*mub*sin(theta)**2 - 2*alphacb*mub - 2*alphacc*muc*sin(theta)**2)*cos(theta)/4
+YZZ 0
+ZXX -(alphaaa*muc*sin(theta)**2 + alphabb*muc*sin(theta)**2 + 2*alphaca*mua*sin(theta)**2 - 2*alphaca*mua + 2*alphacb*mub*sin(theta)**2 - 2*alphacb*mub - 2*alphacc*muc*sin(theta)**2)*cos(theta)/4
+ZXY -(alphaca*mub - alphacb*mua)*(3*sin(theta)**2 - 2)/4
+ZXZ 0
+ZYX (alphaca*mub - alphacb*mua)*(3*sin(theta)**2 - 2)/4
+ZYY -(alphaaa*muc*sin(theta)**2 + alphabb*muc*sin(theta)**2 + 2*alphaca*mua*sin(theta)**2 - 2*alphaca*mua + 2*alphacb*mub*sin(theta)**2 - 2*alphacb*mub - 2*alphacc*muc*sin(theta)**2)*cos(theta)/4
+ZYZ 0
+ZZX 0
+ZZY 0
+ZZZ (alphaaa*muc*sin(theta)**2 + alphabb*muc*sin(theta)**2 + 2*alphaca*mua*sin(theta)**2 + 2*alphacb*mub*sin(theta)**2 + 2*alphacc*muc*cos(theta)**2)*cos(theta)/2

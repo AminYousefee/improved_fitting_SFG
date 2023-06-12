@@ -1,0 +1,25 @@
+phi, psi uniform and theta is unspecified
+
+from sympy:
+
+IR:
+x = y
+z
+
+Raman:
+xx = xy = yx = yy = zx = zy
+xz = yz = zz
+
+SFG:
+
+xxx 0 = xxy = xyx = xyy = xzz = yxx = yxy = yyx = yyy = yzz = zxz = zyz = zzx = zzy = 0
+xxz 2 = yyz
+xyz 5
+xzx 6 = yzy
+xzy 7
+yxz 11
+yzx 15
+zxx 18 =zyy
+zxy 19
+zyx 21
+zzz 26

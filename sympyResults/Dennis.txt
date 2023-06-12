@@ -1,0 +1,28 @@
+Matrix([[-sin(phi)*sin(psi) + cos(phi)*cos(psi)*cos(theta), -sin(phi)*cos(psi) - sin(psi)*cos(phi)*cos(theta), sin(theta)*cos(phi)], [sin(phi)*cos(psi)*cos(theta) + sin(psi)*cos(phi), -sin(phi)*sin(psi)*cos(theta) + cos(phi)*cos(psi), sin(phi)*sin(theta)], [-sin(theta)*cos(psi), sin(psi)*sin(theta), cos(theta)]])
+xxx:  0
+xxy:  0
+xxz:  (aac*cos(theta)**2 + aac - 2*aca*sin(theta)**2 + bbc*cos(theta)**2 + bbc - 2*bcb*sin(theta)**2 + 2*ccc*sin(theta)**2)*cos(theta)/4
+xyx:  0
+xyy:  0
+xyz:  0
+xzx:  -(aac*sin(theta)**2 + 2*aca*sin(theta)**2 - 2*aca + bbc*sin(theta)**2 + 2*bcb*sin(theta)**2 - 2*bcb - 2*ccc*sin(theta)**2)*cos(theta)/4
+xzy:  -(acb - bca)*(3*sin(theta)**2 - 2)/4
+xzz:  0
+yxx:  0
+yxy:  0
+yxz:  0
+yyx:  0
+yyy:  0
+yyz:  (aac*cos(theta)**2 + aac - 2*aca*sin(theta)**2 + bbc*cos(theta)**2 + bbc - 2*bcb*sin(theta)**2 + 2*ccc*sin(theta)**2)*cos(theta)/4
+yzx:  (acb - bca)*(3*sin(theta)**2 - 2)/4
+yzy:  -(aac*sin(theta)**2 + 2*aca*sin(theta)**2 - 2*aca + bbc*sin(theta)**2 + 2*bcb*sin(theta)**2 - 2*bcb - 2*ccc*sin(theta)**2)*cos(theta)/4
+yzz:  0
+zxx:  -(aac*sin(theta)**2 + 2*aca*sin(theta)**2 - 2*aca + bbc*sin(theta)**2 + 2*bcb*sin(theta)**2 - 2*bcb - 2*ccc*sin(theta)**2)*cos(theta)/4
+zxy:  -(acb - bca)*(3*sin(theta)**2 - 2)/4
+zxz:  0
+zyx:  (acb - bca)*(3*sin(theta)**2 - 2)/4
+zyy:  -(aac*sin(theta)**2 + 2*aca*sin(theta)**2 - 2*aca + bbc*sin(theta)**2 + 2*bcb*sin(theta)**2 - 2*bcb - 2*ccc*sin(theta)**2)*cos(theta)/4
+zyz:  0
+zzx:  0
+zzy:  0
+zzz:  (aac*sin(theta)**2 + 2*aca*sin(theta)**2 + bbc*sin(theta)**2 + 2*bcb*sin(theta)**2 + 2*ccc*cos(theta)**2)*cos(theta)/2
