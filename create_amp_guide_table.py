@@ -77,7 +77,11 @@ if __name__ == "__main__":
     if not os.path.isdir(base_path_gaussian_tilt):
         os.makedirs(base_path_gaussian_tilt)
     amp_table_creator_delta(base_path_delta)
-    sigma_list = np.array([np.deg2rad(sigma_deg) for sigma_deg in range(1, 90, 5)])
-    for sigma in sigma_list:
-        amp_table_creator_gaussian(sigma, base_path_gaussian_tilt)
+    sigma_list_deg = np.array([sig for sig in range(1, 90, 5)])
+    sigma_list = np.array([np.deg2rad(sig) for sig in sigma_list_deg])
+    for sigma, sigma_deg in zip(sigma_list, sigma_list_deg):
+        final_directory = base_path_gaussian_tilt + str(sigma_deg) + "/"
+        if not os.path.isdir(final_directory):
+            os.makedirs(final_directory)
+        amp_table_creator_gaussian(sigma, final_directory)
         print("a table is created in gaussian mode")

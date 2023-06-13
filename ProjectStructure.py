@@ -195,9 +195,9 @@ class Molecule:
         # print("ZZZ TABLE".center(70, "-"))
         # print(tabulate(zzz_table))
 
-        fig1 = plt.figure(figsize=(table_column_number//2 + 1, table_row_number//2))
-        fig2 = plt.figure(figsize=(table_column_number//2 + 1, table_row_number//2))
-        fig3 = plt.figure(figsize=(table_column_number//2 + 1, table_row_number//2))
+        fig1 = plt.figure(figsize=(table_column_number//3 + 1, table_row_number//3))
+        fig2 = plt.figure(figsize=(table_column_number//3 + 1, table_row_number//3))
+        fig3 = plt.figure(figsize=(table_column_number//3 + 1, table_row_number//3))
 
         ax1 = fig1.add_subplot(1, 1, 1)
         ax2 = fig2.add_subplot(1, 1, 1)
@@ -243,9 +243,10 @@ class Molecule:
         fig1.tight_layout()
         fig2.tight_layout()
         fig3.tight_layout()
-        fig1.savefig(fig1_filepath, dpi=600)
-        fig2.savefig(fig2_filepath, dpi=600)
-        fig3.savefig(fig3_filepath, dpi=600)
+        dpi = 400
+        fig1.savefig(fig1_filepath, dpi=dpi)
+        fig2.savefig(fig2_filepath, dpi=dpi)
+        fig3.savefig(fig3_filepath, dpi=dpi)
         plt.close(fig1)
         plt.close(fig2)
         plt.close(fig3)

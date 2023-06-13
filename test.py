@@ -25,7 +25,7 @@ y = np.vectorize(func)(x)
 y2 = add_noise_to_array(y, 5)
 fig, ax = plt.subplots()
 ax.plot(x, y2)
-extra_index = 1
+extra_index = 0
 normal_modes = peak_positions[extra_index:]
 extra_modes = peak_positions[:extra_index]
 for peak in normal_modes:
@@ -36,4 +36,4 @@ for peak in extra_modes:
     pass
     ax.axvline(peak, color="red", ls="dotted")
 
-fig.savefig("09 cancellation {} {}.png".format(As, peak_positions), dpi=600)
+fig.savefig("10 non res {} {}.png".format(As, peak_positions), dpi=600)
