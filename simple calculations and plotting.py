@@ -4,7 +4,7 @@ import numpy as np
 
 def func():
     alanine = Molecule("alanine", use_preset_molecular_frame_coordinates=True)
-    gaussian_filepath = "./gaussian_output/{}.log".format(alanine.name)
+    gaussian_filepath = "C:\\Users\\Amin\\Nextcloud\\research\\computational_projects\\002\\results\\alanine\\experimental\\HF\\STO-3G\\AnalineInputGaussian.log"
     alanine.parse_gaussian_file(gaussian_filepath)
     alanine.print_parsed_data()
 
@@ -13,7 +13,7 @@ def func():
     # ----------------------------- PROVIDING TOOLS FOR THE CALCULATIONS: ODF, LAB, desired wavenumber range(start, end , step) ------------------------------------------
 
     theta0 = np.deg2rad(35)
-    odf_parameters = {"type": "gaussian", "theta": {"theta0": theta0, "sigma": 50}, "phi": None, "psi": None}
+    odf_parameters = {"type": "delta", "theta": {"theta0": theta0, "sigma": None}, "phi": None, "psi": None}
     odf = ODF(parameters=odf_parameters)
     lab = Lab(n1=1, n2=1.5, theta1_degree_sfg=65, theta1_degree_IR=65, theta1_degree_vis=65)
     # spectrum 1 is going to be for the whole spectrum based on electronic structure calculation
@@ -30,7 +30,8 @@ def func():
     alanine_spectrum1.show_sfg_intensity_arrays()
     alanine_spectrum1.show_real_mode_lorentzian_info()
     noise = 0
-    alanine_spectrum1.show_all_spectra_at_certain_orientaiton(show_normalized=False, filename="01simple_smoothed_all_charts_gaussian_sigma50.png", noise=noise)
+    # alanine_spectrum1.show_all_spectra_at_certain_orientaiton(show_normalized=False, filename="01simple_smoothed_all_charts_gaussian_sigma50.png", noise=noise)
+    alanine_spectrum1.show_all_spectra_at_certain_orientaiton(show_normalized=False, filename="simple_smoothed_delta_HF_STO.png", noise=noise)
 
 
 if __name__ == "__main__":

@@ -1,9 +1,9 @@
-%chk=4cyano.chk
-%mem=75000mb
-%nproc=32
+%chk=alanine.chk
+%mem=64GB
+%nproc=48
 #p scf=tight opt  aug-cc-PVTZ B3LYP NoSymmetry
 
-4cyanp Opt
+Alanine Opt
 
 0  1
 C          -0.60217         2.30180         0.36354
@@ -21,12 +21,11 @@ O          -2.98767         2.50551         0.05662
 H          -3.74474         1.98413        -0.28422
 
 --Link1--
-%chk=4cyano.chk
-%mem=75000mb
-%nproc=32
+%chk=alanine.chk
+%mem=64GB
+%nproc=48
 # CPHF=RdFreq B3LYP aug-cc-PVTZ Freq(ROA,printderivatives) Geom=Check Guess=Read polar(ROA,Raman) NoSymmetry int=superfine
 
-4cyano
 
 0 1
 

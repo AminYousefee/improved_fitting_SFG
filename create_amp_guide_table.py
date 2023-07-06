@@ -15,7 +15,7 @@ def amp_table_creator_delta(base_dir):
         mode_table_guide[1].append(alanine.list_of_modes[i].frequency)
     # print(tabulate(np.array(mode_table_guide).T))
     # ---------------- DELTA, THETA ---------------
-    theta0_list_in_rad = np.deg2rad(list(range(0, 185, 5)))
+    theta0_list_in_rad = np.deg2rad(list(range(0, 95, 5)))
     odf_list = []
     for i in range(len(theta0_list_in_rad)):
         theta0 = theta0_list_in_rad[i]
@@ -77,11 +77,12 @@ if __name__ == "__main__":
     if not os.path.isdir(base_path_gaussian_tilt):
         os.makedirs(base_path_gaussian_tilt)
     amp_table_creator_delta(base_path_delta)
-    sigma_list_deg = np.array([sig for sig in range(1, 90, 5)])
-    sigma_list = np.array([np.deg2rad(sig) for sig in sigma_list_deg])
-    for sigma, sigma_deg in zip(sigma_list, sigma_list_deg):
-        final_directory = base_path_gaussian_tilt + str(sigma_deg) + "/"
-        if not os.path.isdir(final_directory):
-            os.makedirs(final_directory)
-        amp_table_creator_gaussian(sigma, final_directory)
-        print("a table is created in gaussian mode")
+    print("fuck you man")
+    # sigma_list_deg = np.array([sig for sig in range(1, 90, 5)])
+    # sigma_list = np.array([np.deg2rad(sig) for sig in sigma_list_deg])
+    # for sigma, sigma_deg in zip(sigma_list, sigma_list_deg):
+    #     final_directory = base_path_gaussian_tilt + str(sigma_deg) + "/"
+    #     if not os.path.isdir(final_directory):
+    #         os.makedirs(final_directory)
+    #     amp_table_creator_gaussian(sigma, final_directory)
+    #     print("a table is created in gaussian mode")

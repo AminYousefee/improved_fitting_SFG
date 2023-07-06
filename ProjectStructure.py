@@ -203,9 +203,9 @@ class Molecule:
         ax2 = fig2.add_subplot(1, 1, 1)
         ax3 = fig3.add_subplot(1, 1, 1)
 
-        fig1_filepath = base_dir + "XXZ.png"
-        fig2_filepath = base_dir + "XZX.png"
-        fig3_filepath = base_dir + "ZZZ.png"
+        fig1_filepath = base_dir + "XXZ_90.png"
+        fig2_filepath = base_dir + "XZX_90.png"
+        fig3_filepath = base_dir + "ZZZ_90.png"
 
         cmap = 'bwr'
         im1 = ax1.imshow(xxz_table, cmap=cmap, vmin=-100, vmax=100)
@@ -518,7 +518,8 @@ class Spectrum:
                 ax.axvline(mode.frequency, color="black", ls='dotted')
 
         fig.set_tight_layout(True)
-        filepath = Calculation.give_filepath(self.molecule.name, show_normalized, bool(noise), filename)
+        # filepath = Calculation.give_filepath(self.molecule.name, show_normalized, bool(noise), filename)
+        filepath = "./results/alanine/article_examples/" + filename
         print("all-chart file is saved in {}".format(filepath))
         pylab.savefig(filepath, dpi=800)
         plt.close('all')
@@ -679,14 +680,15 @@ class Spectrum:
             ppp_mag_squared = ppp_mag_squared / normalization_factor_mag_squared_polarizations if normalize_before_save else ppp_mag_squared
             ppp_im = ppp_im / normalization_factor_im_polarizations if normalize_before_save else ppp_im
         data_ready_to_save_mag_squared = np.array([self.light_freq_range, sps_mag_squared, ssp_mag_squared, ppp_mag_squared]).T
-        filepath_mag = Calculation.give_filepath(self.molecule.name, normalize_before_save, noise, filename_mag)
-
+        # filepath_mag = Calculation.give_filepath(self.molecule.name, normalize_before_save, noise, filename_mag)
+        filepath_mag = "./results/alanine/article_examples/{}".format(filename_mag)
         np.savetxt(filepath_mag, data_ready_to_save_mag_squared)
         if create_imag_file:
-            filepath_imag = Calculation.give_filepath(self.molecule.name, normalize_before_save, noise, filename_imag)
+            # filepath_imag = Calculation.give_filepath(self.molecule.name, normalize_before_save, noise, filename_imag)
+            filepath_imag = "./results/alanine/article_examples/{}".format(filename_imag)
             data_ready_to_save_im = np.array([self.light_freq_range, sps_im, ssp_im, ppp_im]).T
             np.savetxt(filepath_imag, data_ready_to_save_im)
-        print("Mag squared and imag files are saved. The order is: sps, ssp, ppp")
+            print(f"Mag squared and imag files are saved \n {filepath_mag} \n {filepath_imag} The order is: sps, ssp, ppp")
 
     def create_guide_table(self):
         pass

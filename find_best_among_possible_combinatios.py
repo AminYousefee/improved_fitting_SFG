@@ -118,7 +118,7 @@ def fit_combinations():
     gamma = (5, 15)
     omega0_bounds = [(3000, 3042), (3042, 3076), (3076, 3113), (3113, 3140)]
     if len(omega0_bounds) != len(curve_fitter1.found_modes):
-        raise Exception("number of omega not is not equal to number of modes which is {]".format(len(curve_fitter1.found_modes)))
+        raise Exception("number of omega_0 is not equal to number of modes which is {]".format(len(curve_fitter1.found_modes)))
     possible_combinations_xxz, possible_combinations_xzx, possible_combinations_zzz = molecule_possibilities(alanine, curve_fitter1.freq_list[0], curve_fitter1.freq_list[-1])
     squared_error_summation_ssp_sps_ppp = dict()
     for i in range(len(possible_combinations_xxz)):
